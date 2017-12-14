@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>WIKEPEDIA VIEWER</title>
+
+	<link rel="stylesheet" href="C:\Users\INTERN-1\Documents\project4\fcc4.css"></link>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <script type="text/javascript" src="js/jquery.autocomplete.min.js"></script>
+
+
+</head>
+
+<body onLoad="ser();">
+
+<div class="container-fluid">
+<!-- MAIN HOME PAGE -->
+<div id="main" class="" >
+		
+		<div id="topbar">
+		<p ><center><b>WIKEPEDIA VIEWER</b></center></p>
+		</div>
+	
+		<div id="search">
+		<input type="text" id="sbox"  placeholder="SEARCH HERE!">
+		</div>
+
+		<div id="butt">
+		<button class="btn" onclick="result()">GO <i class="fa fa-search"></i></button>
+		</div>
+
+</div>	<!-- MAIN HOME PAGE ENDS -->
+<!-- RESULTS PAGE-->
+<div id="results" class="hidden">
+<div class="result-list ">
+
+		<div class="panel-group">
+
+			<div class="panel panel-default">
+  			<div class="panel-heading" id="t1"></div>
+  			<div class="panel-body" id="c1"></div>
+			</div>
+
+			<div class="panel panel-default">
+  			<div class="panel-heading" id="t2"></div>
+  			<div class="panel-body" id="c2"></div>
+			</div>
+
+			<div class="panel panel-default">
+  			<div class="panel-heading" id="t3"></div>
+  			<div class="panel-body" id="c3"></div>
+			</div>
+
+			<div class="panel panel-default">
+  			<div class="panel-heading" id="t4"></div>
+  			<div class="panel-body" id="c4"></div>
+			</div>
+
+			<div class="panel panel-default">
+  			<div class="panel-heading" id="t5"></div>
+  			<div class="panel-body" id="c5"></div>
+			</div>
+
+			<div class="panel panel-default">
+  			<div class="panel-heading" id="t6"></div>
+  			<div class="panel-body" id="c6"></div>
+			</div>
+
+			<div class="panel panel-default">
+  			<div class="panel-heading" id="t7"></div>
+  			<div class="panel-body" id="c7"></div>
+			</div>
+
+		</div>	
+
+</div>
+</div>
+<!-- RESULTS PAGE ENDS-->
+
+<!-- ERROR PAGE BEGINS"-->
+<div id="oops"> <!-- THIS IS THE CONTAINER FOR BOTH ERRORS-->
+<div id="error" class="hidden">
+
+	<div class="panel panel-default">
+  			<div class="panel-heading">OOPS!</div>
+  			<div class="panel-body" >Search keywords not valid. Please try again with different keywords!</div>
+			</div>
+
+
+
+</div><!-- ERROR PAGE ENDS-->
+
+
+<!-- ERROR1 PAGE BEGINS"-->
+
+<div id="error1" class="hidden">
+
+	<div class="panel panel-default">
+  			<div class="panel-heading">OOPS!</div>
+  			<div class="panel-body" >THE SEARCH FIELD IS EMPTY!</div>
+			</div>
+
+
+
+</div><!-- ERROR1 PAGE ENDS-->
+</div>  <!-- ERROR CONTAINER ENDS-->
+</div> <!--CONTAINER CLASS ENDS-->
+</body>
+
+<script src="C:\Users\INTERN-1\Documents\project4\fcc4.js"></script>
+</html>
