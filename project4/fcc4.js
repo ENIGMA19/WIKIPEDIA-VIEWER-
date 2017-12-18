@@ -6,7 +6,7 @@ document.getElementById('sbox').focus();
 
 function result()
 {
-		$("#main").addClass('hidden');
+	$("#sbox").addClass('red');
 	var keyword=document.getElementById('sbox').value;
 	
 		$.ajax({ 
@@ -20,6 +20,8 @@ function result()
 						if((response.query.searchinfo.totalhits)!=0)
 						{
 								$("#results").removeClass('hidden');
+								$("#error1").addClass('hidden');
+								$("#error").addClass('hidden');
 
 							for (var m = 0; m <=6; m++)
 							{
@@ -36,6 +38,7 @@ function result()
 						else
 								{
 										$("#results").addClass('hidden');
+										$("#error1").addClass('hidden');
 										$("#error").removeClass('hidden');
 								}
 
@@ -43,6 +46,7 @@ function result()
 					else
 					{
 						$("#results").addClass('hidden');
+						$("#error").addClass('hidden');
 						$("#error1").removeClass('hidden');
 					}			
 
